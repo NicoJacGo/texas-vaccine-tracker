@@ -1,6 +1,8 @@
 library(shiny)
 library(leaflet)
 library(leaflet.extras)
+library(tidyverse)
+library(shinythemes)
 
 shinyServer( 
   function(input, output) {
