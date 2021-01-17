@@ -1,7 +1,7 @@
 library(shiny)
 library(leaflet)
 library(leaflet.extras)
-library(tidyverse)
+library(readr)
 library(shinythemes)
 
 shinyServer( 
