@@ -15,7 +15,7 @@ shinyServer(
     colnames(tx_data)
     tx_data$Latitude <- as.numeric(tx_data$Latitude)
     tx_data$Longitude <- as.numeric(tx_data$Longitude)
-    tx_data = filter(tx_data, Latitude != "NA")
+    #tx_data = filter(tx_data, Latitude != "NA")
     pal <- colorFactor(pal = c("#1b9e77", "#d95f02", "#7570b3"), domain = c("Charity", "Government", "Private"))
     tx_data <- mutate(tx_data, cntnt=paste0('<strong>Provider Name: </strong>',Provider_Name,
                                             '<br><strong>Address:</strong> ', Address,
