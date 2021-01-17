@@ -3,6 +3,7 @@ library(readr)
 library(leaflet)
 library(leaflet.extras)
 library(shinythemes)
+library(dplyr)
 tx_data_g = read_csv("new_aggregate.csv")
 
 shinyUI(bootstrapPage(

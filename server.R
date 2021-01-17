@@ -3,7 +3,7 @@ library(leaflet)
 library(leaflet.extras)
 library(readr)
 library(shinythemes)
-
+library(dplyr)
 shinyServer( 
   function(input, output) {
     tx_data <- read_csv("new_aggregate.csv")
